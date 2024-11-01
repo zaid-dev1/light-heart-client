@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* src/app/globals.css */
+/* @import '~antd/dist/antd.css'; Include Ant Design styles */
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Noto Serif", serif !important;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.ant-checkbox-inner {
+  border-color: #746253 !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #746253 !important;
+  border-color: #746253 !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner::after {
+  border-color: white !important;
+}
+
+.ant-select .ant-select-selector {
+  background-color: #ede6de3d !important;
+}
+
+.ant-drawer-header {
+  display: none !important;
+}
+.ant-drawer-body {
+  padding: 0 !important;
+}
+
+.ant-modal-header {
+  margin: 0px !important;
+}
+
+.ant-modal-content {
+  border-radius: 18px !important;
+  padding: 0 !important;
+}
+
+.ant-pagination-item-active {
+  border-color: #746253 !important;
+}
+.ant-pagination-item-active > a {
+  color: #746253 !important;
+}
+
+.gm-style-iw-chr {
+  display: none;
+}
